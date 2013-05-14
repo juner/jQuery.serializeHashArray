@@ -1,5 +1,5 @@
 /**
- * serializeの連想配列用ラッパー関数
+ * serializeの連想配列用ラッパープラグイン
  * @author juner <juner@juner.net>
  * https://github.com/juner/jquery.serializeHashArray
  */
@@ -25,7 +25,18 @@
             return hashArray;
         }
     };
+    
+    /**
+     * serializeArray で生成した配列を操作しやすい様にnameをキーとした連想配列に変換する。
+     * @param {Array} array jQuery.fn.serializeArrayで生成された配列
+     * @example <pre>var ary $.serializeArray2HashArray($(selecter).serializeArray());</pre>
+     */
     $.serializeArray2HashArray = methods.serializeArray2HashArray;
+    
+    /**
+     * 対象要素にて serializeArray で生成した配列を serializeArray2HashArray で変換する。
+     * @example <pre>var ary = $(selecter).serializeHashArray();</pre>
+     */
     $.fn.serializeHashArray = function(){
         return $.serializeArray2HashArray($(this).serializeArray());
     };
