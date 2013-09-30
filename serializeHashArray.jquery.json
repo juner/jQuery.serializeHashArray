@@ -1,0 +1,35 @@
+{
+    "name": "serializeHashArray",
+    "title": "jQuery.serializeHashArray",
+    "description": "Wrapper plugins jQuery.fn.serializeArray.",
+    "keywords": [
+        "form",
+        "serialize",
+        "serializeArray"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "juner",
+        "url": "https://github.com/juner"
+    },
+    "maintainers": [
+        {
+            "name": "juner",
+            "email": "juner@juner.net",
+            "url": "http://blogger.juner.net"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/MIT"
+        }
+    ],
+    "bugs": "https://github.com/juner/jQuery.serializeHashArray/issues",
+    "homepage": "https://github.com/juner/jQuery.serializeHashArray",
+    "docs": "https://github.com/juner/jQuery.serializeHashArray",
+    "download": "https://github.com/juner/jQuery.serializeHashArray/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
