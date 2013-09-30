@@ -1,4 +1,4 @@
-#ｊQuery.serializeHashArray について
+#jQuery.serializeHashArray について
 ##概要
 jQuery.fn.ajaxする際の引数は jQuery.fn.serializeArrayの配列と、連想配列（オブジェクト）の形式に対応している為、jQuery.fn.serializeArrayをオブジェクトに変換する為のラッパープラグインです。
 ##用法
