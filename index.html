@@ -1,16 +1,70 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="utf-8"/>
-        <title>jQuery.serializeHashArray</title>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="./jquery.serializeHashArray.js"></script>
-    </head>
-    <body>
-        <h1>jQuery.serializeHashArray</h1>
-        <p>jQuery.fn.serializeArray() のラッパー関数 jQuery.fn.serializeHashArray()</p>
-        <p>機能としては、serializeArrayで取得される配列をjQuery.ajax() で利用できる形の連想配列に起こします。</p>
-        <pre>var harray = $(targetForm).serializeHashArray();<br/>harray[key]=value;<br/>...<br/>$.ajax(url,harray)<br/>...</pre>
-        <p>みたいな使い方を想定しています。</p>
-    </body>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="jQuery.serializeHashArray : jQueryのserializeArrayの拡張" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>jQuery.serializeHashArray</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/juner/jQuery.serializeHashArray">View on GitHub</a>
+
+          <h1 id="project_title">jQuery.serializeHashArray</h1>
+          <h2 id="project_tagline">jQueryのserializeArrayの拡張</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/juner/jQuery.serializeHashArray/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/juner/jQuery.serializeHashArray/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="%EF%BD%8Aqueryserializehasharray-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6" class="anchor" href="#%EF%BD%8Aqueryserializehasharray-%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6"><span class="octicon octicon-link"></span></a>ｊQuery.serializeHashArray について</h1>
+
+<h2>
+<a name="%E6%A6%82%E8%A6%81" class="anchor" href="#%E6%A6%82%E8%A6%81"><span class="octicon octicon-link"></span></a>概要</h2>
+
+<p>jQuery.fn.ajaxする際の引数は jQuery.fn.serializeArrayの配列と、連想配列（オブジェクト）の形式に対応している為、jQuery.fn.serializeArrayをオブジェクトに変換する為のラッパープラグインです。</p>
+
+<h2>
+<a name="%E7%94%A8%E6%B3%95" class="anchor" href="#%E7%94%A8%E6%B3%95"><span class="octicon octicon-link"></span></a>用法</h2>
+
+<pre><code>&lt;script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="./js/jquery.serializeHashArray.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>で読み込んで連想配列が欲しいformで</p>
+
+<pre><code>var data = $(formSelector).serializeHashArray();
+</code></pre>
+
+<p>とするだけです。
+尚、このプラグインは複数同じnameの値のフォームパーツがある場合、配列として格納します。</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">jQuery.serializeHashArray maintained by <a href="https://github.com/juner">juner</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
