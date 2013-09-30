@@ -9,3 +9,5 @@ jQuery.fn.ajaxする際の引数は jQuery.fn.serializeArrayの配列と、連�
     var data = $(formSelector).serializeHashArray();
 とするだけです。
 尚、このプラグインは複数同じnameの値のフォームパーツがある場合、配列として格納します。
+##注意点
+同じキーに対しては配列として値を設定することで複数の値を設定することを可能にしています（jQuery.ajaxに使用可能な形式準拠）

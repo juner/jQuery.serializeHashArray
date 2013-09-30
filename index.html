@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <title>jQuery.serializeHashArray</title>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="./jquery.serializeHashArray.js"></script>
     </head>
     <body>
@@ -12,5 +12,7 @@
         <p>機能としては、serializeArrayで取得される配列をjQuery.ajax() で利用できる形の連想配列に起こします。</p>
         <pre>var harray = $(targetForm).serializeHashArray();<br/>harray[key]=value;<br/>...<br/>$.ajax(url,harray)<br/>...</pre>
         <p>みたいな使い方を想定しています。</p>
+        <h2>動作基準</h2>
+        <p>もしも同じキーの値が複数個あった場合は、キーに対する配列として値を設定します。</p>
     </body>
 </html>

@@ -20,7 +20,7 @@
  * @author juner <juner@juner.net>
  * https://github.com/juner/jQuery.serializeHashArray
  */
-(function ($) {
+;(function($){
     "use strict";
     var methods = {
         /**
