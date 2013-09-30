@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <title>jQuery.serializeHashArray</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="./jquery.serializeHashArray.js"></script>
+    </head>
+    <body>
+        <h1>jQuery.serializeHashArray</h1>
+        <p>jQuery.fn.serializeArray() のラッパー関数 jQuery.fn.serializeHashArray()</p>
+        <p>機能としては、serializeArrayで取得される配列をjQuery.ajax() で利用できる形の連想配列に起こします。</p>
+        <pre>var harray = $(targetForm).serializeHashArray();<br/>harray[key]=value;<br/>...<br/>$.ajax(url,harray)<br/>...</pre>
+        <p>みたいな使い方を想定しています。</p>
+    </body>
+</html>

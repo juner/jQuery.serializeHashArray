@@ -21,6 +21,7 @@
  * https://github.com/juner/jQuery.serializeHashArray
  */
 (function ($) {
+    "use strict";
     var methods = {
         /**
     	 * 連想配列に $.fn.serializeArray の配列の要素 a を元に hashArray に追加する。
@@ -57,7 +58,7 @@
     /**
      * serializeArray で生成した配列を操作しやすい様にnameをキーとした連想配列に変換する。
      * @param {Array} array jQuery.fn.serializeArrayで生成された配列
-     * @example <pre>var ary $.serializeArray2HashArray($(selecter).serializeArray());</pre>
+     * @example <pre>var ary = $.serializeArray2HashArray($(selecter).serializeArray());</pre>
      */
     $.serializeArray2HashArray = methods.serializeArray2HashArray;
 
