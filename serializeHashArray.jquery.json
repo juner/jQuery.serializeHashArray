@@ -5,6 +5,7 @@
     "keywords": [
         "form",
         "serialize",
+        "HashArray",
         "serializeArray"
     ],
     "version": "1.0.0",
